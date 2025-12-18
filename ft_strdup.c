@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strdup.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: pfajardo <pfajardo@student.42.fr>          +#+  +:+       +#+        */
+/*   By: pabfajar <pabfajar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/10 10:56:35 by pfajardo          #+#    #+#             */
-/*   Updated: 2025/12/15 15:19:05 by pfajardo         ###   ########.fr       */
+/*   Updated: 2025/12/18 13:17:13 by pabfajar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ char	*ft_strdup(const char *s1)
 	}
 	while (s1[counter])
 	{
-		counter = s1[counter];
+		dest[counter] = s1[counter];
 		counter++;
 	}
 	dest[counter] = '\0';

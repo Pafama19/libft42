@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_itoa.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: pfajardo <pfajardo@student.42.fr>          +#+  +:+       +#+        */
+/*   By: pabfajar <pabfajar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/13 19:00:35 by pfajardo          #+#    #+#             */
-/*   Updated: 2025/12/15 16:57:11 by pfajardo         ###   ########.fr       */
+/*   Updated: 2025/12/18 13:59:44 by pabfajar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,9 +35,9 @@ char	*ft_itoa(int n)
 	int		nbr_digits;
 
 	nbr_digits = count_digits(n);
-	str = malloc(nbr_digits * sizeof(char) + 1);
 	if (n == -2147483648)
 		return (ft_strdup("-2147483648"));
+	str = malloc((nbr_digits + 1) * sizeof(char));
 	if (!str)
 		return (NULL);
 	str[nbr_digits] = '\0';
