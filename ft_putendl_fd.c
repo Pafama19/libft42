@@ -6,7 +6,7 @@
 /*   By: pabfajar <pabfajar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/13 19:58:11 by pfajardo          #+#    #+#             */
-/*   Updated: 2025/12/18 14:14:39 by pabfajar         ###   ########.fr       */
+/*   Updated: 2025/12/18 19:53:37 by pabfajar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 void	ft_putendl_fd(char *s, int fd)
 {
 	if (!s)
-		return (NULL);
+		return ;
 	ft_putstr_fd(s, fd);
 	write(fd, "\n", 1);
 }

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strjoin.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: pfajardo <pfajardo@student.42.fr>          +#+  +:+       +#+        */
+/*   By: pabfajar <pabfajar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/10 12:10:27 by pfajardo          #+#    #+#             */
-/*   Updated: 2025/12/10 12:32:10 by pfajardo         ###   ########.fr       */
+/*   Updated: 2025/12/18 19:54:23 by pabfajar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,6 +30,7 @@ char	*ft_strjoin(const char *s1, const char *s2)
 		dest[counter] = s1[counter];
 		counter++;
 	}
+	dest[counter] = '\0';
 	ft_strlcat(dest, s2, len_s1 + len_s2 + 1);
 	return (dest);
 }
